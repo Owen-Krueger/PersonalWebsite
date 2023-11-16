@@ -1,0 +1,13 @@
+﻿<PortfolioSection Title="Programming Languages">
+    <Content>
+        @foreach (var language in Languages)
+        {
+            <p>@language.Name</p>
+        }
+    </Content>
+</PortfolioSection>
+
+@code {
+    [Parameter]
+    public List<ProgrammingLanguage> Languages { get; set; }
+}

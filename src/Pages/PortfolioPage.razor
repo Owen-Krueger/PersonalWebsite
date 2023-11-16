@@ -1,0 +1,37 @@
+﻿@page "/portfolio"
+@using Newtonsoft.Json
+@inject HttpClient Client
+
+<PageTitle>Owen Krueger - Portfolio</PageTitle>
+
+<div class="h-screen">
+    <div class="fixed top-4 left-4">
+        <a href="" class="text-neutral-50 hover:text-cyan-200 inline-flex items-center">
+            <svg class="fill-current w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z"/>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <div class="mt-8 flex flex-col gap-2 justify-center">
+        <PortfolioHeader />
+        <PortfolioResume />
+        <PortfolioWork Companies="portfolio.Work.Companies" />
+        <PortfolioProjects Projects="portfolio.Projects" />
+        <PortfolioLanguages Languages="portfolio.Languages" />
+    </div>
+</div>
+
+@code {
+
+    private Portfolio portfolio = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Client.GetAsync("portfolio.json");
+        if (response.IsSuccessStatusCode)
+        {
+            portfolio = JsonConvert.DeserializeObject<Portfolio>(await response.Content.ReadAsStringAsync()) ?? new Portfolio();
+        }
+    }
+}

@@ -1,0 +1,91 @@
+﻿{
+  "work": {
+    "companies": [
+      {
+        "name": "DigiKey",
+        "positions": [
+          {
+            "title": "Senior Software Engineer",
+            "start": "2022-12-01",
+            "description": "Organize and coordinate company-wide transformation projects. Design, architect, and develop financial software. Utilize programming languages like C# and C++ to create Web APIs, Web applications, and Windows desktop software. Practice SCRUM on a team of 11 people."
+          },
+          {
+            "title": "Software Engineer",
+            "start": "2019-06-01",
+            "end": "2022-12-01",
+            "description": "Design, architect, and develop financial software. Utilize programming languages like C# and C++ to create Web APIs, Web applications, and Windows desktop software. Practice SCRUM on a team of 11 people."
+          }
+        ]
+      },
+      {
+        "name": "The College of St. Scholastica",
+        "positions": [
+          {
+            "title": "Computer Science Tutor",
+            "start": "2016-09-01",
+            "end": "2019-05-01",
+            "description": "Coach and mentor students in Computer Information Systems field, motivate students, assist in evaluating studying techniques and learning styles, build relationships with students and colleagues with diverse backgrounds, and model professional academic behavior."
+          },
+          {
+            "title": "Tech Service Assistant",
+            "start": "2017-04-01",
+            "end": "2019-05-01",
+            "description": "Assist the IT Department with staff requests, wipe old computers and image new ones to swap out, troubleshoot problems with current hardware and software, and communicate with IT employees and St. Scholastica staff."
+          },
+          {
+            "title": "Web Assistant",
+            "start": "2018-05-01",
+            "end": "2019-05-01",
+            "description": "Created, modified, and analyzed websites used in the CIS 1001 course on campus, created scripts for automatic quiz generation from a Google Sheet, troubleshooted bugs in website/systems."
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "SqliteMemoryDatabaseProvider",
+      "language": "C#",
+      "url": "https://github.com/Owen-Krueger/SqliteMemoryDatabaseProvider",
+      "description": "For creating in-memory SQLite databases to be used within unit tests."
+    },
+    {
+      "name": "EntityFrameworkCore.Concurrency",
+      "language": "C#",
+      "url": "https://github.com/Owen-Krueger/EntityFrameworkCore.Concurrency",
+      "description": "For handling concurrency conflicts in EntityFramework."
+    },
+    {
+      "name": "MultiDiary",
+      "language": "C#",
+      "url": "https://github.com/Owen-Krueger/MultiDiary",
+      "description": "Simple but powerful journal app."
+    },
+    {
+      "name": "Personal Website",
+      "language": "Rust",
+      "url": "https://github.com/Owen-Krueger/Website",
+      "description": "Website hosting links and a portfolio--in Rust!"
+    },
+    {
+      "name": "Wedding Website",
+      "language": "C#",
+      "url": "https://github.com/Owen-Krueger/AllisonOwenWedding",
+      "description": "Wedding website for my wedding."
+    }
+  ],
+  "languages": [
+    {
+      "name": "C#",
+      "rating": 5
+    },
+    {
+      "name": "C++",
+      "rating": 3.5
+    },
+    {
+      "name": "Rust",
+      "rating": 2
+    }
+  ]
+}
