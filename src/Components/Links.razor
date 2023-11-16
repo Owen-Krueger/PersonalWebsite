@@ -4,16 +4,27 @@
         target="_blank"
         class="hover:text-cyan-200">
         GitHub
-    </a> |
+    </a>
+    <span>|</span>
     <a
         href="https://www.linkedin.com/in/owenkrueger"
         target="_blank"
         class="hover:text-cyan-200">
         LinkedIn
-    </a> |
-    <a
-        href="portfolio"
-        class="hover:text-cyan-200">
-        Portfolio
     </a>
+    @if (IncludePortfolio)
+    {
+        <span>|</span>
+        <a
+            href="portfolio"
+            class="hover:text-cyan-200">
+            Portfolio
+        </a>
+    }
 </div>
+
+@code
+{
+    [Parameter]
+    public bool IncludePortfolio { get; set; } = true;
+}
