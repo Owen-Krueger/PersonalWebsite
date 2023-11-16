@@ -6,5 +6,5 @@ public class Portfolio
 
     public List<Project> Projects { get; set; }
 
-    public List<ProgrammingLanguage> Languages { get; set; }
+    public List<PortfolioLanguage> Languages { get; set; }
 }

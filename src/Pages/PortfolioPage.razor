@@ -28,7 +28,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var response = await Client.GetAsync("portfolio.json");
+        // Adding a timestamp to the request prevents the browser from caching the json file.
+        var response = await Client.GetAsync($"portfolio.json?timestamp={DateTime.Now}");
         if (response.IsSuccessStatusCode)
         {
             portfolio = JsonConvert.DeserializeObject<Portfolio>(await response.Content.ReadAsStringAsync()) ?? new Portfolio();

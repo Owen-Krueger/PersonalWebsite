@@ -2,12 +2,12 @@
     <Content>
         @foreach (var language in Languages)
         {
-            <p>@language.Name</p>
+            <p class="@language.Language.GetColor()">@language.Language.GetFormattedString()</p>
         }
     </Content>
 </PortfolioSection>
 
 @code {
     [Parameter]
-    public List<ProgrammingLanguage> Languages { get; set; }
+    public List<PortfolioLanguage> Languages { get; set; }
 }

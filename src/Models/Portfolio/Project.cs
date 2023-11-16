@@ -4,7 +4,7 @@ public class Project
 {
     public string Name { get; set; }
 
-    public string Language { get; set; }
+    public ProgrammingLanguage Language { get; set; }
 
     public string Url { get; set; }
 

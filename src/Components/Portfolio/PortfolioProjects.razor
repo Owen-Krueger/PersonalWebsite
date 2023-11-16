@@ -3,6 +3,9 @@
         @foreach (var project in Projects)
         {
             <p>@project.Name</p>
+            <p class="@project.Language.GetColor()">@project.Language.GetFormattedString()</p>
+            <a href="@project.Url" target="_blank">@project.Url</a>
+            <p>@project.Description</p>
         }
     </Content>
 </PortfolioSection>
