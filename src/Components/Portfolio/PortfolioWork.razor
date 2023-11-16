@@ -2,28 +2,30 @@
     <Content>
         @foreach (var company in Companies)
         {
-            <div>
-                <span class="font-bold">@company.Name</span>
-                <span>@GetDateStringForCompany(company)</span>
-            </div>
+            <p class="text-lg font-bold text-cyan-500 mb-4">@company.Name</p>
+            @foreach (var position in company.Positions)
+            {
+                <div class="mb-6">
+                    <div>
+                        <span class="font-bold">@position.Title</span>
+                        <span class="float-right">@GetDateString(position.StartDate, position.EndDate)</span>
+                    </div>
+                    <div>
+                        <p>@position.Description</p>
+                    </div>
+                </div>
+            }
+            <HorizontalBar />
         }
     </Content>
 </PortfolioSection>
 
 @code {
-    [Parameter]
-    public List<Company> Companies { get; set; }
-
     /// <summary>
-    /// Gets a date string for the company, based on all the positions for the company. End date will be "Present" if
-    /// any end dates are null, which means that the position is ongoing.
+    /// List of companies under an employer.
     /// </summary>
-    private string GetDateStringForCompany(Company company)
-    {
-        var minDate = company.Positions.Min(x => x.StartDate);
-        var maxDate = company.Positions.Any(x => x.EndDate is null) ? null : company.Positions.Max(x => x.EndDate);
-        return GetDateString(minDate, maxDate);
-    }
+    [Parameter]
+    public List<Company> Companies { get; set; } = new();
 
     /// <summary>
     /// Gets a date string in the format of "startDate - endDate" or "startDate - Present" if endDate is null.

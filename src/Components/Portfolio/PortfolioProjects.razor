@@ -12,13 +12,18 @@
                     <a href="@project.Url" target="_blank">@project.Url</a>
                 </div>
                 <p>@project.Description</p>
-                <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+                <HorizontalBar />
             </div>
         }
     </Content>
 </PortfolioSection>
 
 @code {
+
+    /// <summary>
+    /// The projects to display.
+    /// </summary>
     [Parameter]
-    public List<Project> Projects { get; set; }
+    public List<Project> Projects { get; set; } = new();
+
 }

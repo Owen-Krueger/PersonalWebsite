@@ -13,6 +13,10 @@
 </PortfolioSection>
 
 @code {
+
+    /// <summary>
+    /// The list of programming languages to display.
+    /// </summary>
     [Parameter]
-    public List<PortfolioLanguage> Languages { get; set; }
+    public List<PortfolioLanguage> Languages { get; set; } = new();
 }
