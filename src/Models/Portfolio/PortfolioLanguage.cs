@@ -7,5 +7,5 @@ public class PortfolioLanguage
     [JsonProperty("Name")]
     public ProgrammingLanguage Language { get; set; }
 
-    public decimal Rating { get; set; }
+    public int Proficiency { get; set; }
 }

@@ -59,33 +59,33 @@
       "name": "MultiDiary",
       "language": "CSharp",
       "url": "https://github.com/Owen-Krueger/MultiDiary",
-      "description": "Simple but powerful journal app."
+      "description": "Simple but powerful journal app. Built using .NET and Maui."
     },
     {
       "name": "Personal Website",
-      "language": "Rust",
-      "url": "https://github.com/Owen-Krueger/Website",
-      "description": "Website hosting links and a portfolio--in Rust!"
+      "language": "CSharp",
+      "url": "https://github.com/Owen-Krueger/PersonalWebsite",
+      "description": "Personal website created using .NET and Blazor WASM."
     },
     {
       "name": "Wedding Website",
       "language": "CSharp",
       "url": "https://github.com/Owen-Krueger/AllisonOwenWedding",
-      "description": "Wedding website for my wedding."
+      "description": "Wedding website for my wedding. Built using .NET and Blazor (Server and Client). Hosted in Docker."
     }
   ],
   "languages": [
     {
       "name": "CSharp",
-      "rating": 5
+      "proficiency": 100
     },
     {
       "name": "CPlusPlus",
-      "rating": 3.5
+      "proficiency": 70
     },
     {
       "name": "Rust",
-      "rating": 2
+      "proficiency": 33
     }
   ]
 }

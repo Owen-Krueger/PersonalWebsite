@@ -2,10 +2,18 @@
     <Content>
         @foreach (var project in Projects)
         {
-            <p>@project.Name</p>
-            <p class="@project.Language.GetColor()">@project.Language.GetFormattedString()</p>
-            <a href="@project.Url" target="_blank">@project.Url</a>
-            <p>@project.Description</p>
+            <div class="flex flex-col gap-2">
+                <div>
+                    <span class="font-bold">@project.Name</span>
+                    <span class="@project.Language.GetColor()">@project.Language.GetFormattedString()</span>
+                </div>
+                <div>
+                    <span>Link: </span>
+                    <a href="@project.Url" target="_blank">@project.Url</a>
+                </div>
+                <p>@project.Description</p>
+                <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+            </div>
         }
     </Content>
 </PortfolioSection>
