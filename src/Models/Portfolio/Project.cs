@@ -1,12 +1,27 @@
 ﻿namespace PersonalWebsite.Models.Portfolio;
 
+/// <summary>
+/// A programming project.
+/// </summary>
 public class Project
 {
-    public string Name { get; set; }
+    /// <summary>
+    /// The name of the project.
+    /// </summary>
+    public string Name { get; set; } = string.Empty;
 
+    /// <summary>
+    /// The programming language used for the project.
+    /// </summary>
     public ProgrammingLanguage Language { get; set; }
 
-    public string Url { get; set; }
+    /// <summary>
+    /// A link to the project.
+    /// </summary>
+    public string Url { get; set; } = string.Empty;
 
-    public string Description { get; set; }
+    /// <summary>
+    /// Additional information about the project.
+    /// </summary>
+    public string Description { get; set; } = string.Empty;
 }

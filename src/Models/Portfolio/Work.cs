@@ -2,27 +2,57 @@
 
 namespace PersonalWebsite.Models.Portfolio;
 
+/// <summary>
+/// Employment history.
+/// </summary>
 public class Work
 {
-    public List<Company> Companies { get; set; }
+    /// <summary>
+    /// A list of companies worked at.
+    /// </summary>
+    public List<Company> Companies { get; set; } = new();
 }
 
+/// <summary>
+/// An employer.
+/// </summary>
 public class Company
 {
-    public string Name { get; set; }
+    /// <summary>
+    /// The name of the company.
+    /// </summary>
+    public string Name { get; set; } = string.Empty;
 
-    public List<Position> Positions { get; set; }
+    /// <summary>
+    /// The various positions held at the company.
+    /// </summary>
+    public List<Position> Positions { get; set; } = new();
 }
 
+/// <summary>
+/// A position held at a company.
+/// </summary>
 public class Position
 {
-    public string Title { get; set; }
+    /// <summary>
+    /// The title/role of the position.
+    /// </summary>
+    public string Title { get; set; } = string.Empty;
 
+    /// <summary>
+    /// The date the position started.
+    /// </summary>
     [JsonProperty("start")]
     public DateOnly StartDate { get; set; }
 
+    /// <summary>
+    /// The date the position ended. Null if still employed.
+    /// </summary>
     [JsonProperty("end")]
     public DateOnly? EndDate { get; set; }
 
-    public string Description { get; set; }
+    /// <summary>
+    /// Additional information about the position.
+    /// </summary>
+    public string Description { get; set; } = string.Empty;
 }

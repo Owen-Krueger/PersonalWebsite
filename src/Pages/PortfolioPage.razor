@@ -1,18 +1,18 @@
 ﻿@page "/portfolio"
 @using Newtonsoft.Json
 @inject HttpClient Client
+@inject NavigationManager NavigationManager
 
 <PageTitle>Owen Krueger - Portfolio</PageTitle>
 
 <div class="h-screen">
-    <div class="fixed top-4 left-4 p-2 bg-cyan-600 rounded-2xl">
-        <a href="" class="text-neutral-50 hover:text-cyan-200 inline-flex items-center">
-            <svg class="fill-current w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z"/>
-            </svg>
-            <span>Home</span>
-        </a>
-    </div>
+    <button class="fixed top-4 left-4 p-2 w-20 text-center bg-cyan-500 hover:bg-cyan-600 text-neutral-50 rounded-2xl flex items-center justify-center"
+        @onclick="NavigateHome">
+        <svg class="fill-current w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z"/>
+        </svg>
+        <span>Home</span>
+    </button>
     <div class="mt-8 flex flex-col gap-2 justify-center">
         <PortfolioHeader />
         <PortfolioResume />
@@ -26,6 +26,9 @@
 
     private Portfolio portfolio = new();
 
+    /// <summary>
+    /// Gets portfolio information from json file and renders the page.
+    /// </summary>
     protected override async Task OnInitializedAsync()
     {
         // Adding a timestamp to the request prevents the browser from caching the json file.
@@ -35,4 +38,9 @@
             portfolio = JsonConvert.DeserializeObject<Portfolio>(await response.Content.ReadAsStringAsync()) ?? new Portfolio();
         }
     }
+
+    /// <summary>
+    /// Navigate back to home page.
+    /// </summary>
+    private void NavigateHome() => NavigationManager.NavigateTo("");
 }
