@@ -8,7 +8,7 @@
                 <div class="mb-6">
                     <div>
                         <span class="font-bold">@position.Title</span>
-                        <span class="float-right">@GetDateString(position.StartDate, position.EndDate)</span>
+                        <span class="float-right">@DateOnlyExtensions.GetDateString(position.StartDate, position.EndDate)</span>
                     </div>
                     <div>
                         <p>@position.Description</p>
@@ -32,12 +32,4 @@
     /// </summary>
     [Parameter]
     public bool IsLoading { get; set; }
-
-    /// <summary>
-    /// Gets a date string in the format of "startDate - endDate" or "startDate - Present" if endDate is null.
-    /// </summary>
-    private string GetDateString(DateOnly startDate, DateOnly? endDate)
-    {
-        return $"({startDate} - {endDate?.ToString() ?? "Present"})";
-    }
 }

@@ -47,13 +47,13 @@
       "name": "SqliteMemoryDatabaseProvider",
       "language": "CSharp",
       "url": "https://github.com/Owen-Krueger/SqliteMemoryDatabaseProvider",
-      "description": "For creating in-memory SQLite databases to be used within unit tests."
+      "description": "NuGet package for .NET 6.0 and above applications for creating in-memory SQLite databases to be used within unit tests."
     },
     {
       "name": "EntityFrameworkCore.Concurrency",
       "language": "CSharp",
       "url": "https://github.com/Owen-Krueger/EntityFrameworkCore.Concurrency",
-      "description": "For handling concurrency conflicts in EntityFramework."
+      "description": "NuGet package for .NET 6.0 and above applications for handling concurrency conflicts in EntityFramework."
     },
     {
       "name": "MultiDiary",
@@ -74,6 +74,57 @@
       "description": "Wedding website for my wedding. Built using .NET and Blazor (Server and Client). Hosted in Docker."
     }
   ],
+  "education": {
+    "schools": [
+      {
+        "name": "The College of St. Scholastica",
+        "degree": "Bachelor of Science",
+        "major": "Computer Information Systems",
+        "concentration": "Software Engineering",
+        "start": "2015-09-01",
+        "end": "2019-05-01",
+        "gpa": 3.96,
+        "courses": [
+          {
+            "name": "Project Management",
+            "number": "CIS 4108"
+          },
+          {
+            "name": "Computer Security",
+            "number": "CIS 4042"
+          },
+          {
+            "name": "Web Design",
+            "number": "CIS 4041"
+          },
+          {
+            "name": "Server-Side Web Development",
+            "number": "CIS 4034"
+          },
+          {
+            "name": "Mobile Device Programming",
+            "number": "CIS 3334"
+          },
+          {
+            "name": "Software Quality Assurance",
+            "number": "CIS 3287"
+          },
+          {
+            "name": "Software Design",
+            "number": "CIS 3285"
+          },
+          {
+            "name": "Data Structures and Algorithm Analysis",
+            "number": "CIS 3089"
+          },
+          {
+            "name": "Client-Side Web Development",
+            "number": "CIS 3034"
+          }
+        ]
+      }
+    ]
+  },
   "languages": [
     {
       "name": "CSharp",

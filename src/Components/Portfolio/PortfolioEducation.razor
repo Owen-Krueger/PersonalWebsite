@@ -1,0 +1,47 @@
+﻿<PortfolioSection IsLoading="IsLoading" Title="Education">
+    <Content>
+        @foreach (var school in Schools)
+        {
+            <div>
+                <span class="text-lg font-bold text-cyan-500 mb-4">@school.Name</span>
+                <span class="float-right">@DateOnlyExtensions.GetDateString(school.StartDate, school.EndDate)</span>
+            </div>
+            <p><strong>Major</strong>: @school.Degree in @school.Major</p>
+            @if (school.Minor is not null)
+            {
+                <p><strong>Minor</strong>: @school.Minor</p>
+            }
+            @if (school.Concentration is not null)
+            {
+                <p><strong>Concentration</strong>: @school.Concentration</p>
+            }
+            <p><strong>GPA</strong>: @school.Gpa</p>
+            <p><strong>Relevant Courses:</strong></p>
+            <ul class="list-disc list-inside">
+                @foreach (var position in school.Courses)
+                {
+                    <li class="ml-4">
+                        <span>@position.Name</span>
+                        <span>(@position.Number)</span>
+                    </li>
+                }
+            </ul>
+            <HorizontalBar />
+        }
+    </Content>
+</PortfolioSection>
+
+@code {
+
+    /// <summary>
+    /// The schools to display.
+    /// </summary>
+    [Parameter]
+    public List<School> Schools { get; set; } = new();
+
+    /// <summary>
+    /// Whether or not to display the loading animation.
+    /// </summary>
+    [Parameter]
+    public bool IsLoading { get; set; }
+}

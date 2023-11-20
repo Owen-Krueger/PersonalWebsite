@@ -16,6 +16,11 @@ public class Portfolio
     public List<Project> Projects { get; set; } = new();
 
     /// <summary>
+    /// Education received.
+    /// </summary>
+    public Education Education { get; set; } = new();
+
+    /// <summary>
     /// Computer programming languages used.
     /// </summary>
     public List<PortfolioLanguage> Languages { get; set; } = new();
