@@ -7,13 +7,13 @@
           {
             "title": "Senior Software Engineer",
             "start": "2022-12-01",
-            "description": "Organize, coordinate, and lead company-wide transformation projects. Establish company-wide standards. Coordinate continuous updates and maintenance of existing standards. Contribute to tooling utilized by all developers within company.<br/><br/>Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal codebases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Architect solutions to ensure the handling of load of 1 million requests or more per day. Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
+            "description": "Organize, coordinate, and lead company-wide transformation projects. Establish company-wide standards. Coordinate continuous updates and maintenance of existing standards. Contribute to tooling utilized by all developers within company.<br/><br/>Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal code bases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Architect solutions to ensure the handling of load of 1 million requests or more per day. Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
           },
           {
             "title": "Software Engineer",
             "start": "2019-06-01",
             "end": "2022-12-01",
-            "description": "Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal codebases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
+            "description": "Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal code bases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
           }
         ]
       },

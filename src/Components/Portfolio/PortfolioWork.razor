@@ -8,7 +8,7 @@
                 <div class="mb-6">
                     <div>
                         <span class="font-bold">@position.Title</span>
-                        <span class="float-right">@DateOnlyExtensions.GetDateString(position.StartDate, position.EndDate)</span>
+                        <span class="block sm:inline sm:float-right">@DateOnlyExtensions.GetDateString(position.StartDate, position.EndDate)</span>
                     </div>
                     <div>
                         @((MarkupString)Markdown.ToHtml(position.Description))
