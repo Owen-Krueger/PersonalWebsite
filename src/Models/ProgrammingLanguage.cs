@@ -18,7 +18,12 @@ public enum ProgrammingLanguage
     /// <summary>
     /// Rust programming language.
     /// </summary>
-    Rust
+    Rust,
+
+    /// <summary>
+    /// Python programming language.
+    /// </summary>
+    Python
 }
 
 /// <summary>
@@ -36,6 +41,7 @@ public static class ProgrammingLanguageUtilities
             ProgrammingLanguage.CSharp => "C#",
             ProgrammingLanguage.CPlusPlus => "C++",
             ProgrammingLanguage.Rust => "Rust",
+            ProgrammingLanguage.Python => "Python",
             _ => string.Empty
         };
     }
@@ -50,6 +56,7 @@ public static class ProgrammingLanguageUtilities
             ProgrammingLanguage.CSharp => "purple",
             ProgrammingLanguage.CPlusPlus => "sky",
             ProgrammingLanguage.Rust => "red",
+            ProgrammingLanguage.Python => "blue",
             _ => "green"
         };
 
