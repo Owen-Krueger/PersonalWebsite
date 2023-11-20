@@ -1,4 +1,4 @@
-﻿<PortfolioSection Title="Programming Language Proficiency">
+﻿<PortfolioSection IsLoading="IsLoading" Title="Programming Language Proficiency">
     <Content>
         @foreach (var language in Languages)
         {
@@ -19,4 +19,10 @@
     /// </summary>
     [Parameter]
     public List<PortfolioLanguage> Languages { get; set; } = new();
+
+    /// <summary>
+    /// Whether or not to display the loading animation.
+    /// </summary>
+    [Parameter]
+    public bool IsLoading { get; set; }
 }

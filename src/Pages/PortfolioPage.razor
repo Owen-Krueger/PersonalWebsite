@@ -16,15 +16,16 @@
     <div class="mt-8 flex flex-col gap-2 justify-center">
         <PortfolioHeader />
         @* <PortfolioResume /> *@
-        <PortfolioWork Companies="portfolio.Work.Companies" />
-        <PortfolioProjects Projects="portfolio.Projects" />
-        <PortfolioLanguages Languages="portfolio.Languages" />
+        <PortfolioWork IsLoading="isLoading" Companies="portfolio.Work.Companies" />
+        <PortfolioProjects IsLoading="isLoading" Projects="portfolio.Projects" />
+        <PortfolioLanguages IsLoading="isLoading" Languages="portfolio.Languages" />
     </div>
 </div>
 
 @code {
 
     private Portfolio portfolio = new();
+    private bool isLoading = true;
 
     /// <summary>
     /// Gets portfolio information from json file and renders the page.
@@ -36,6 +37,7 @@
         if (response.IsSuccessStatusCode)
         {
             portfolio = JsonConvert.DeserializeObject<Portfolio>(await response.Content.ReadAsStringAsync()) ?? new Portfolio();
+            isLoading = false;
         }
     }
 

@@ -1,4 +1,4 @@
-﻿<PortfolioSection Title="Employment">
+﻿<PortfolioSection IsLoading="IsLoading" Title="Employment">
     <Content>
         @foreach (var company in Companies)
         {
@@ -26,6 +26,12 @@
     /// </summary>
     [Parameter]
     public List<Company> Companies { get; set; } = new();
+
+    /// <summary>
+    /// Whether or not to display the loading animation.
+    /// </summary>
+    [Parameter]
+    public bool IsLoading { get; set; }
 
     /// <summary>
     /// Gets a date string in the format of "startDate - endDate" or "startDate - Present" if endDate is null.
