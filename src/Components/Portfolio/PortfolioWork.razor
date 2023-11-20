@@ -11,7 +11,7 @@
                         <span class="float-right">@DateOnlyExtensions.GetDateString(position.StartDate, position.EndDate)</span>
                     </div>
                     <div>
-                        <p>@position.Description</p>
+                        @((MarkupString)Markdown.ToHtml(position.Description))
                     </div>
                 </div>
             }

@@ -7,13 +7,13 @@
           {
             "title": "Senior Software Engineer",
             "start": "2022-12-01",
-            "description": "Organize and coordinate company-wide transformation projects. Design, architect, and develop financial software. Utilize programming languages like C# and C++ to create Web APIs, Web applications, and Windows desktop software. Practice SCRUM on a team of 11 people."
+            "description": "Organize, coordinate, and lead company-wide transformation projects. Establish company-wide standards. Coordinate continuous updates and maintenance of existing standards. Contribute to tooling utilized by all developers within company.<br/><br/>Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal codebases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Architect solutions to ensure the handling of load of 1 million requests or more per day. Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
           },
           {
             "title": "Software Engineer",
             "start": "2019-06-01",
             "end": "2022-12-01",
-            "description": "Design, architect, and develop financial software. Utilize programming languages like C# and C++ to create Web APIs, Web applications, and Windows desktop software. Practice SCRUM on a team of 11 people."
+            "description": "Utilize programming languages like C# to develop web APIs, schedule-based jobs, and web applications, and C++ to maintain and modernize legacy solutions. Develop solutions to interact with internal codebases, as well as third party applications for tax calculation, payment processing, and other financial activities.<br/><br/>Develop and execute test cases, utilizing automated testing in CI/CD pipeline wherever possible. Implement monitoring, logging, and error handling.<br/><br/>Practice SCRUM on a team of 11 people."
           }
         ]
       },
@@ -47,7 +47,7 @@
       "name": "SqliteMemoryDatabaseProvider",
       "language": "CSharp",
       "url": "https://github.com/Owen-Krueger/SqliteMemoryDatabaseProvider",
-      "description": "NuGet package for .NET 6.0 and above applications for creating in-memory SQLite databases to be used within unit tests."
+      "description": "NuGet package for .NET 6.0 and above applications for creating in-memory SQLite databases to be used within unit tests. Follows <u>[Microsoft's documentation](https://learn.microsoft.com/en-us/ef/core/testing/testing-without-the-database#sqlite-in-memory)</u> on how to create unit testing without using a production database system, but doesn't require all the boilerplate outlined in the documentation for consumers."
     },
     {
       "name": "EntityFrameworkCore.Concurrency",

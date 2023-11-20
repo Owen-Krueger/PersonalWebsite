@@ -11,7 +11,7 @@
                     <span>Link: </span>
                     <a href="@project.Url" target="_blank" class="hover:text-cyan-500">@project.Url</a>
                 </div>
-                <p>@project.Description</p>
+                @((MarkupString)Markdown.ToHtml(project.Description))
                 <HorizontalBar />
             </div>
         }
