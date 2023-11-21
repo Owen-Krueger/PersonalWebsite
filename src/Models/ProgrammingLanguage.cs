@@ -49,7 +49,7 @@ public static class ProgrammingLanguageUtilities
     /// <summary>
     /// Gets the color to display for a <see cref="ProgrammingLanguage"/>.
     /// </summary>
-    public static string GetColor(this ProgrammingLanguage programmingLanguage)
+    public static string GetColor(this ProgrammingLanguage programmingLanguage, string? start = null)
     {
         var color = programmingLanguage switch
         {
@@ -60,6 +60,6 @@ public static class ProgrammingLanguageUtilities
             _ => "green"
         };
 
-        return $"text-{color}-500";
+        return $"{start ?? "text"}-{color}-500";
     }
 }
