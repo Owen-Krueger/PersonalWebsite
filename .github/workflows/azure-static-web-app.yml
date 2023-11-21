@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      # Runs rm package.json package-lock.json to avoid conflicts with the Azure Static Web Apps build, which
+      # will detect the package.json file and not run the dotnet build command.
       - name: Install Dependencies and Generate Tailwind CSS
         run: |
           cd src
