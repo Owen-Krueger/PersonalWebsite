@@ -4,5 +4,8 @@
   },
   "scripts": {
     "build": "npx tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/app.css"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
