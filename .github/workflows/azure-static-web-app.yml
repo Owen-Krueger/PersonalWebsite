@@ -17,12 +17,13 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
       - name: Generate Tailwind CSS
         run: |
           cd src
           npm install
           npm run build:css
+          cd ../
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
