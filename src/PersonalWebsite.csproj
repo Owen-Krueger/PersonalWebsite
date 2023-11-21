@@ -13,8 +13,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
-<!--  <Target Name="PostBuild" AfterTargets="PostBuildEvent">-->
-<!--    <Exec Command="npm run build" />-->
-<!--  </Target>-->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="npm run build:css" />
+  </Target>
 
 </Project>
