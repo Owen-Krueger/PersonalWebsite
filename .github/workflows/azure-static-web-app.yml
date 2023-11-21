@@ -14,8 +14,13 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14'
       - name: Generate Tailwind CSS
         run: |
+          cd src
           npm install
           npm run build:css
       - name: Build And Deploy
