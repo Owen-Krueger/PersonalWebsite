@@ -27,6 +27,7 @@ jobs:
           npm install
           npm run build:css
           rm package.json package-lock.json
+          rm -rf node_modules
           cd ..
       - name: Build And Deploy Blazor App
         id: builddeploy
