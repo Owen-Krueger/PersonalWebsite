@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - name: Check Out Repo
+        uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
@@ -18,15 +19,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install dependencies
+      - name: Install Dependencies and Generate Tailwind CSS
         run: |
           cd src
           npm install
-      - name: Generate Tailwind CSS
-        run: |
           npm run build:css
           cd ..
-      - name: Build And Deploy
+      - name: Build And Deploy Blazor App
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
