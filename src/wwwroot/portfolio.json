@@ -45,38 +45,50 @@
   "projects": [
     {
       "name": "SqliteMemoryDatabaseProvider",
-      "language": "CSharp",
+      "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/SqliteMemoryDatabaseProvider",
       "description": "NuGet package for .NET 6.0 and above applications for creating in-memory SQLite databases to be used within unit tests. Follows <u>[Microsoft's documentation](https://learn.microsoft.com/en-us/ef/core/testing/testing-without-the-database#sqlite-in-memory)</u> on how to create unit testing without using a production database system, but doesn't require all the boilerplate outlined in the documentation for consumers."
     },
     {
       "name": "EntityFrameworkCore.Concurrency",
-      "language": "CSharp",
+      "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/EntityFrameworkCore.Concurrency",
       "description": "NuGet package for .NET 6.0 and above applications for handling concurrency conflicts in EntityFramework."
     },
     {
+      "name": "Better Money Manager",
+      "languages": [ "CSharp", "Rust" ],
+      "url": "https://github.com/Owen-Krueger/BetterMoneyManager",
+      "description": "A desktop application for managing finances. Frontend using Tauri (Rust) and UI using Blazor Webassembly. State management using Flux."
+    },
+    {
       "name": "MultiDiary",
-      "language": "CSharp",
+      "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/MultiDiary",
       "description": "Simple but powerful journal app. Built using .NET and Maui."
     },
     {
       "name": "Personal Website",
-      "language": "CSharp",
+      "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/PersonalWebsite",
-      "description": "Personal website created using .NET and Blazor WASM."
+      "description": "Personal website created using .NET and Blazor Webassembly."
+    },
+    {
+      "name": "CLI Tools",
+      "languages": [ "Rust" ],
+      "url": "https://github.com/Owen-Krueger/cli-tools",
+      "description": "Lightweight CLI tools built using Rust."
     },
     {
       "name": "Wedding Website",
-      "language": "CSharp",
+      "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/AllisonOwenWedding",
       "description": "Wedding website for my wedding. Built using .NET and Blazor (Server and Client). Hosted in Docker."
     },
     {
       "name": "Home Assistant Automations",
-      "language": "Python",
-      "url": "https://github.com/Owen-Krueger/HomeAssistantConfiguration/tree/main/addon_configs/a0d7b954_appdaemon",
+      "languages": [ "Python" ],
+      "url": "https://github.com/Owen-Krueger/HomeAssistantConfiguration-AppDaemon",
       "description": "Various automations for my home. Built using Python and AppDaemon. Includes limited testing using pytest."
     }
   ],

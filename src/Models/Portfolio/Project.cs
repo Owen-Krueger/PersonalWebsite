@@ -11,9 +11,9 @@ public class Project
     public string Name { get; set; } = string.Empty;
 
     /// <summary>
-    /// The programming language used for the project.
+    /// The programming languages used for the project.
     /// </summary>
-    public ProgrammingLanguage Language { get; set; }
+    public List<ProgrammingLanguage> Languages { get; set; } = new();
 
     /// <summary>
     /// A link to the project.
