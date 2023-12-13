@@ -59,7 +59,7 @@
       "name": "Better Money Manager",
       "languages": [ "CSharp", "Rust" ],
       "url": "https://github.com/Owen-Krueger/BetterMoneyManager",
-      "description": "A desktop application for managing finances. Frontend using Tauri (Rust) and UI using Blazor Webassembly. State management using Flux."
+      "description": "A desktop application for managing finances. Frontend using Tauri (Rust) and UI using Blazor WebAssembly. State management using Flux."
     },
     {
       "name": "MultiDiary",
@@ -71,7 +71,7 @@
       "name": "Personal Website",
       "languages": [ "CSharp" ],
       "url": "https://github.com/Owen-Krueger/PersonalWebsite",
-      "description": "Personal website created using .NET and Blazor Webassembly."
+      "description": "Personal website created using .NET and Blazor WebAssembly."
     },
     {
       "name": "CLI Tools",
