@@ -1,13 +1,9 @@
 ﻿<PortfolioSection IsLoading="IsLoading" Title="Programming Language Proficiency">
     <Content>
+        <p class="mb-1">Click on language for additional details</p>
         @foreach (var language in Languages)
         {
-            <div class="mb-2 flex flex-col gap-2">
-                <p class="font-bold @language.Language.GetColor()">@language.Language.GetFormattedString()</p>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                    <div class="@language.Language.GetColor("bg") h-2.5 rounded-full" style="width: @language.Proficiency%"></div>
-                </div>
-            </div>
+            <PortfolioLanguageView Language="language"/>
         }
     </Content>
 </PortfolioSection>
@@ -18,7 +14,7 @@
     /// The list of programming languages to display.
     /// </summary>
     [Parameter]
-    public List<PortfolioLanguage> Languages { get; set; } = new();
+    public List<PortfolioLanguage> Languages { get; set; } = [];
 
     /// <summary>
     /// Whether or not to display the loading animation.

@@ -146,19 +146,23 @@
   "languages": [
     {
       "name": "CSharp",
-      "proficiency": 100
+      "proficiency": 100,
+      "details": "Used on both personal and professional projects. A variety of technologies and frameworks have been used, including .NET Framework, .NET Core, .NET, Blazor, ASP.NET, EntityFramework, Linq, and Maui."
     },
     {
       "name": "CPlusPlus",
-      "proficiency": 70
+      "proficiency": 70,
+      "details": "Used on professional projects, with an emphasis on legacy modernization."
     },
     {
       "name": "Rust",
-      "proficiency": 33
+      "proficiency": 33,
+      "details": "Used on personal projects, with an emphasis on CLI tools and desktop applications. In the exploratory phase of using Rust for a wide variety of project types."
     },
     {
       "name": "Python",
-      "proficiency": 25
+      "proficiency": 25,
+      "details": "Used primarily in home automation projects. Limited knowledge of the language and its features."
     }
   ]
 }

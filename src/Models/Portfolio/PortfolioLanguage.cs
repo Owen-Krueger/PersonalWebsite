@@ -17,4 +17,9 @@ public class PortfolioLanguage
     /// The proficiency in the programming language out of 100.
     /// </summary>
     public int Proficiency { get; set; }
+
+    /// <summary>
+    /// Additional details as to why the proficiency is what it is.
+    /// </summary>
+    public string Details { get; set; } = string.Empty;
 }
